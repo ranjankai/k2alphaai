@@ -48,5 +48,5 @@
 ## Pending Tasks
 - [ ] Implement a proper newsletter/lead-capture backend (currently mailto).
 - [ ] Add client/sector-specific subpages if required.
-- [ ] Set `GEMINI_API_KEY` in Vercel to activate the "Ask K2Alpha" AI box (see above).
+- [x] Set `GEMINI_API_KEY` in Vercel to activate the "Ask K2Alpha" AI box (Production and Preview, Aug 2026).
 - [ ] Optional: add basic abuse/rate-limiting to `/api/ask` before high-traffic launch (e.g. Vercel Edge Config or a lightweight IP-based limiter) — currently only length-limited.
