@@ -9,6 +9,7 @@
     - `script.js`: Intersection Observers for scroll animations (Scaling Trap, Trajectory, Counters).
 
 ## Strategic Frameworks
+- **Custom Software is a Right**: Thesis that off-the-shelf SaaS is a compromise; in the AI age, custom-built owned software is the baseline right of every enterprise.
 - **Scaling Trap**: The core thesis on cost/headcount decoupling.
 - **PQRS**: Engineering standards (Performance, Quality, Reliability, Security).
 - **Three-Layer Model**: AI/Tech → Strategy → Capital.
@@ -25,7 +26,10 @@
 - **URL**: [https://k2alphaai.vercel.app](https://k2alphaai.vercel.app)
 - **Account**: `ranjan-5311s-projects`
 
+## Completed Tasks
+- [x] Align copy with the Custom Software thesis (July 2026).
+- [x] Add favicon (June 2026).
+
 ## Pending Tasks
-- [ ] Add favicon.
 - [ ] Implement a proper newsletter/lead-capture backend (currently mailto).
 - [ ] Add client/sector-specific subpages if required.

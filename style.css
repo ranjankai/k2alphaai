@@ -70,7 +70,7 @@ section{padding:4rem 0}
 .section-label{font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--primary);margin-bottom:0.75rem}
 h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;letter-spacing:-0.03em;margin-bottom:1rem}
 h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
-.section-sub{font-size:1.05rem;color:var(--text-secondary);max-width:640px;line-height:1.7;margin-bottom:2rem}
+.section-sub{font-size:1.05rem;color:var(--text-secondary);max-width:100%;line-height:1.7;margin-bottom:2rem}
 
 /* ─── FADE IN ─── */
 .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
@@ -83,7 +83,7 @@ h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
 .hero-tag{display:inline-flex;align-items:center;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);background:var(--accent-dim);border:1px solid rgba(201,168,76,0.2);padding:0.4rem 1rem;border-radius:100px;margin-bottom:1.5rem}
 .hero-h1{font-size:clamp(2.8rem,6vw,5rem);font-weight:900;line-height:1.08;letter-spacing:-0.04em;margin-bottom:1.25rem}
 .hero-h1 em{font-style:normal;color:var(--primary)}
-.hero-sub{font-size:1.15rem;color:var(--text-secondary);line-height:1.7;max-width:600px}
+.hero-sub{font-size:1.15rem;color:var(--text-secondary);line-height:1.7;max-width:100%}
 
 /* ─── PROOF STRIP ─── */
 .proof-strip{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:center;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.5rem 2rem}
@@ -123,7 +123,7 @@ h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
 
 /* Stack diagram */
 .method-subhead{font-size:1rem;font-weight:700;color:var(--text);margin:2rem 0 0.4rem}
-.method-desc{font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1.25rem;max-width:680px}
+.method-desc{font-size:0.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:1.25rem;max-width:100%}
 .stack-diagram{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;flex-direction:column}
 .stack-row{display:flex;align-items:center;gap:1.25rem}
 .stack-label-left{width:150px;flex-shrink:0;font-size:0.75rem;font-weight:600;color:var(--text-muted);text-align:right}
@@ -190,7 +190,7 @@ h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
 .timeline-step .weeks{font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:0.35rem}
 .timeline-step h4{font-size:0.875rem;font-weight:700;margin-bottom:0.3rem;color:var(--text)}
 .timeline-step p{font-size:0.78rem;color:var(--text-secondary);line-height:1.5}
-.timeline-proof{margin-top:2rem;font-size:0.85rem;color:var(--text-muted);font-style:italic;max-width:680px;line-height:1.65}
+.timeline-proof{margin-top:2rem;font-size:0.85rem;color:var(--text-muted);font-style:italic;max-width:100%;line-height:1.65}
 
 /* PQRS */
 .pqrs-block{margin-top:2rem}
@@ -213,7 +213,7 @@ h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
 .team-orgs{font-size:0.75rem;color:var(--text-muted);line-height:1.5;margin-top:0.35rem}
 .team-linkedin{display:inline-block;margin-top:0.6rem;font-size:0.75rem;font-weight:600;color:var(--primary);text-decoration:none;border:1px solid var(--border);padding:0.2rem 0.65rem;border-radius:6px;transition:all 0.2s}
 .team-linkedin:hover{background:var(--primary-dim)}
-.team-bench{margin-top:1.75rem;font-size:0.875rem;color:var(--text-secondary);line-height:1.65;max-width:640px}
+.team-bench{margin-top:1.75rem;font-size:0.875rem;color:var(--text-secondary);line-height:1.65;max-width:100%}
 .team-bench-stat{font-size:0.78rem;color:var(--text-muted);font-style:italic}
 
 /* ─── CTA ─── */
@@ -257,3 +257,31 @@ footer{padding:1.5rem 2rem;text-align:center;border-top:1px solid var(--border-s
   .stack-label-left{width:auto;text-align:left}
   .stack-arrow{padding-left:0}
 }
+
+.proof-caption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.playbook-intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.playbook-intro h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.playbook-intro p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 100%;
+}
+

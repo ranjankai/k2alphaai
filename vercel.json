@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/crm",
+      "destination": "https://k2crm.vercel.app/crm"
+    },
+    {
+      "source": "/crm/:path*",
+      "destination": "https://k2crm.vercel.app/crm/:path*"
+    },
+    {
+      "source": "/asegobot",
+      "destination": "https://asegobot.vercel.app"
+    },
+    {
+      "source": "/asegobot/:path*",
+      "destination": "https://asegobot.vercel.app/:path*"
+    }
+  ]
+}
