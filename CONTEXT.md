@@ -40,6 +40,7 @@
 - **Project Name**: `k2alphaai`
 - **URL**: [https://k2alphaai.vercel.app](https://k2alphaai.vercel.app)
 - **Account**: `ranjan-5311s-projects`
+- **Note (Aug 2026)**: there is a separate, unrelated Vercel project named `k2alpha-website` under a different team (`ranjan-kant-s-projects`) — do not confuse the two. This repo is linked only to `ranjan-5311s-projects/k2alphaai` (see `.vercel/project.json`). Env vars and deploys must go to that project.
 
 ## Completed Tasks
 - [x] Align copy with the Custom Software thesis (July 2026).
