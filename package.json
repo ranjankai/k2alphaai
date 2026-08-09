@@ -1,0 +1,9 @@
+{
+  "name": "k2alpha-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "K2Alpha.ai marketing site (static) + /api/ask serverless function.",
+  "engines": {
+    "node": ">=20"
+  }
+}

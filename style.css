@@ -112,6 +112,23 @@ h3{font-size:1.25rem;font-weight:700;margin-bottom:0.75rem}
 .legend-dot-accent{width:28px;height:2px;background:var(--accent);border-radius:2px}
 .legend-dot-primary{width:28px;height:3px;background:var(--primary);border-radius:2px}
 
+/* ─── ASK K2ALPHA ─── */
+#ask{background:var(--bg-alt)}
+.ask-wrapper{margin-top:1.75rem}
+.ask-form{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.5rem}
+.ask-textarea{width:100%;background:var(--bg);border:1px solid var(--border-subtle);border-radius:10px;padding:0.9rem 1rem;color:var(--text);font-family:'Inter',sans-serif;font-size:0.95rem;line-height:1.6;resize:vertical;min-height:84px;transition:border-color 0.2s}
+.ask-textarea:focus{outline:none;border-color:var(--border)}
+.ask-textarea::placeholder{color:var(--text-muted)}
+.ask-row{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;margin-top:1rem;flex-wrap:wrap}
+.ask-hint{font-size:0.78rem;color:var(--text-muted);line-height:1.5;max-width:60ch}
+.btn-ask{flex-shrink:0;background:var(--primary-dim);border:1px solid var(--border);color:var(--primary);padding:0.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:0.85rem;font-family:'Inter',sans-serif;cursor:pointer;transition:all 0.2s;white-space:nowrap}
+.btn-ask:hover:not(:disabled){background:var(--primary-glow)}
+.btn-ask:disabled{opacity:0.6;cursor:default}
+.ask-result{margin-top:1.25rem;background:var(--primary-dim);border:1px solid var(--border);border-radius:14px;padding:1.5rem}
+.ask-result-label{font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:0.6rem}
+.ask-answer{font-size:0.95rem;color:var(--text);line-height:1.7;white-space:pre-line}
+.ask-error{margin-top:1.25rem;background:var(--accent-dim);border:1px solid rgba(201,168,76,0.25);border-radius:14px;padding:1rem 1.25rem;font-size:0.85rem;color:var(--accent)}
+
 /* ─── OUR MODEL ─── */
 #model{background:var(--bg)}
 .model-pillars{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}

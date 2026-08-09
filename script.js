@@ -150,6 +150,50 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// Ask K2Alpha
+const askForm = document.getElementById('askForm');
+if (askForm) {
+  const askInput = document.getElementById('askInput');
+  const askSubmit = document.getElementById('askSubmit');
+  const askResult = document.getElementById('askResult');
+  const askAnswer = document.getElementById('askAnswer');
+  const askError = document.getElementById('askError');
+
+  askForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const message = askInput.value.trim();
+    if (!message) return;
+
+    askSubmit.disabled = true;
+    askSubmit.textContent = 'Thinking…';
+    askResult.hidden = true;
+    askError.hidden = true;
+
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message }),
+      });
+      const data = await res.json();
+
+      if (!res.ok || !data.answer) {
+        askError.textContent = data.error || 'Something went wrong. Talk to us: founders@k2alpha.ai';
+        askError.hidden = false;
+      } else {
+        askAnswer.textContent = data.answer;
+        askResult.hidden = false;
+      }
+    } catch (err) {
+      askError.textContent = 'Could not reach the AI right now. Talk to us: founders@k2alpha.ai';
+      askError.hidden = false;
+    } finally {
+      askSubmit.disabled = false;
+      askSubmit.textContent = "See how we'd approach it";
+    }
+  });
+}
+
 // Nav shadow on scroll
 window.addEventListener('scroll', () => {
   document.querySelector('nav').style.boxShadow =

@@ -21,6 +21,7 @@
   <div class="nav-inner">
     <a href="#" class="logo">K2Alpha<span>.ai</span></a>
     <div class="nav-links">
+      <a href="#ask">Ask K2Alpha</a>
       <a href="#model">Our Model</a>
       <a href="#playbooks">Playbooks</a>
       <a href="#team">Team</a>
@@ -38,6 +39,7 @@
 
 <!-- MOBILE OVERLAY -->
 <div class="mobile-overlay" id="mobileOverlay">
+  <a href="#ask" class="mob-link">Ask K2Alpha</a>
   <a href="#model" class="mob-link">Our Model</a>
   <a href="#playbooks" class="mob-link">Playbooks</a>
   <a href="#team" class="mob-link">Team</a>
@@ -163,6 +165,31 @@
         <div class="legend-item"><div class="legend-dot-accent"></div>Legacy model — headcount grows with revenue</div>
         <div class="legend-item"><div class="legend-dot-primary"></div>AI-native model — fixed-cost platform, exponential output</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ASK K2ALPHA ─── -->
+<section id="ask">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">See The Model Work</div>
+      <h2>The clearest proof isn't a slide. It's watching the model reason about your problem.</h2>
+      <p class="section-sub">Describe a workflow, bottleneck or process problem below. The answer is generated live and grounded only in how K2Alpha actually operates — not a generic AI response.</p>
+    </div>
+    <div class="ask-wrapper fade-in">
+      <form id="askForm" class="ask-form">
+        <textarea id="askInput" class="ask-textarea" maxlength="800" rows="3" placeholder="e.g. Our relationship managers spend hours a week manually chasing document status across three systems." required></textarea>
+        <div class="ask-row">
+          <span class="ask-hint">Answered by the same K2Alpha approach we use with clients — not a general-purpose chatbot.</span>
+          <button type="submit" id="askSubmit" class="btn-ask">See how we'd approach it</button>
+        </div>
+      </form>
+      <div id="askResult" class="ask-result" hidden>
+        <div class="ask-result-label">How K2Alpha would approach this</div>
+        <p id="askAnswer" class="ask-answer"></p>
+      </div>
+      <div id="askError" class="ask-error" hidden></div>
     </div>
   </div>
 </section>
